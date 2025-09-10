@@ -15,6 +15,6 @@ header{
     right: 0;
     padding: 20px;
     margin-bottom: 40px;
-    background-image: url();
-    background-size: cover;
+    background-image: url("./assets/img/Captura\ de\ tela\ 2025-09-10\ 173406.png");
+    background-size: contain;
 }
