@@ -1,7 +1,7 @@
 * {
   margin: 0;
   border: 0;
-  background-color: rgb(231, 236, 245);
+  background-color: rgb(176, 188, 210);
   box-sizing: border-box;
 }
 
@@ -24,9 +24,9 @@ header {
 
 .infos {
   width: 100%;
-  background:  rgb(231, 236, 245);            
-  border-top: 1px solid  rgb(231, 236, 245);   
-  border-bottom: 1px solid  rgb(231, 236, 245);
+  background:  rgb(255, 255, 255);            
+  border-top: 1px solid  rgb(255, 255, 255);   
+  border-bottom: 1px solid  rgb(255, 255, 255);
   padding: 12px 0;
   text-align: center;
   margin: 0;
@@ -39,7 +39,7 @@ header {
   margin: 0;
   font-size: 16px;
   font-weight: 500;
-  color: #000;
+  color: rgb(27, 68, 145);
   letter-spacing: 1px;       
   
 }
@@ -87,17 +87,18 @@ header {
   background-repeat: no-repeat;
   position: relative;
   border-radius: 10px;
+  transition: opacity 0.3s ease;
 }
 
 .manchete1 {
   position: absolute;   
   bottom: 20px;         
-  left: 25px; 
-  top: 260px;            
+  left: 25px;            
   color: #ffffff;
   font-size: 40px;
   font-family: 'Bentham';
-  background-color: transparent
+  background-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
 .img2 {
@@ -140,11 +141,11 @@ header {
   position: absolute;   
   bottom: 15px;         
   left: 15px;  
-  top: 300px;          
   color: #ffffff;
   font-size: 20px;
   font-family: 'Bentham';
-  background-color: transparent
+  background-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 .link-report:hover .img2,
 .link-report:hover .img3,
