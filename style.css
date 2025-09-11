@@ -46,7 +46,7 @@ header {
 
 .principal {
   width: 80%;
-  height: 300px;
+  height: 400px;
   margin: 80px auto 20px;
   display: flex;
   align-items: center;
@@ -61,17 +61,19 @@ header {
   margin: 0 auto;
   display: flex;
   gap: 10px;
+  margin-bottom: 300px;
 }
 
 .sec {
   flex: 1;
-  height: 700px;
+  height:400px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   margin-top: 10px;
+  margin: 8px;
 }
 
 .img1 {
@@ -82,14 +84,14 @@ header {
   background-position: center 38%;
   background-repeat: no-repeat;
   position: relative;
-
+  border-radius: 10px;
 }
 
-.manchete1{
+.manchete1 {
   position: absolute;   
   bottom: 20px;         
-  left: 20px; 
-  top: 195px;            
+  left: 25px; 
+  top: 260px;            
   color: #ffffff;
   font-size: 40px;
   font-family: 'Bentham';
@@ -97,31 +99,45 @@ header {
 }
 
 .img2 {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   background: black url("./assets/img/lady-gaga-vma-2025.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 350px;
+  border-radius: 10px;
+  position: relative;
 }
 
 .img3 {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   background: black url("./assets/img/ddddd-798x1200.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 350px;
+  border-radius: 10px;
+  position: relative;
 }
 
 .img4 {
-  width: 300px;
-  height: 300px;
-  background: black url("./assets/img/R.jpg");
+  width: 100%;
+  height: 100%;
+  background: black url("./assets/img/ralphlauren.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 350px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.manchetesec {
+  position: absolute;   
+  bottom: 15px;         
+  left: 15px;  
+  top: 300px;          
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Bentham';
+  background-color: transparent
 }
