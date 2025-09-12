@@ -90,6 +90,7 @@ footer {
 }
 .icone1:hover, .icone2:hover, .icone3:hover{
   opacity: .9;
+
 }
 
 .mainphoto{
@@ -110,3 +111,4 @@ footer {
     margin-top: 13px;
     color: black;
  }
+
