@@ -141,7 +141,7 @@ header {
 .manchetesec {
   position: absolute;   
   bottom: 15px;         
-  left: 15px;  
+  left: 55px;  
   color: #ffffff;
   font-size: 20px;
   font-family: 'Bentham';
@@ -167,4 +167,13 @@ header {
 .link-report:hover .manchetesec {
   text-decoration: underline;
   text-underline-offset: 6px;
+}
+
+.centralizado{
+  display: block;
+  text-align: center;
+  background: transparent;
+  position: absolute;
+  top: 0px;
+  left: 70px;
 }
