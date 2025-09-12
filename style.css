@@ -212,6 +212,10 @@ footer {
   background-size: 60%;   
   
 }
+.imgfooter{
+  width: 15px;
+  height: 15px;
+}
 
  .icone2{
   background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-instagram-Photoroom.png");
@@ -220,8 +224,40 @@ footer {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;   
+  background-size: 60%;  
+  position:relative; 
   
+}
+/* Submenu escondido */
+.submenu {
+  position: absolute;
+  bottom: 80px;         /* aparece acima do ícone */
+  left: 50%;
+  min-width: 180px;     /* largura fixa p/ centralizar sem transform */
+  margin-left: -90px;   /* metade da largura -> centraliza */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 10px;
+  display: none;   /* inicialmente escondido */
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Links dentro do submenu */
+.submenu a {
+  color: rgb(27, 68, 145);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+/* Mostrar menu ao passar o mouse no ícone */
+.icone2:hover .submenu {
+  display: flex;
 }
  .icone3{
   background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-whats-Photoroom.png");
