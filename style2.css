@@ -28,9 +28,60 @@ header {
   gap: 10px;
 }
 
-.img2 {
+.img1 {
   width: 300px;
   height: 300px;
   background: black url("assets/img/4dc5e05c54515dc5862ce48fb634ee2e.jpg") center/cover no-repeat;
   border-radius: 10px;
+}
+
+footer {
+  color: rgb(27, 68, 145);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.contatos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 12px 0;
+}
+
+
+.icone1{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;   
+  
+}
+
+ .icone2{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-instagram-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;   
+  
+}
+ .icone3{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-whats-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;   
+  
+}
+.icone1:hover, .icone2:hover, .icone3:hover{
+  opacity: .9;
 }
