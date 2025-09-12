@@ -24,7 +24,7 @@ header {
 
 .infos {
   width: 100%;
-  background:  rgb(255, 255, 255);            
+            
   border-top: 1px solid  rgb(255, 255, 255);   
   border-bottom: 1px solid  rgb(255, 255, 255);
   padding: 12px 0;
@@ -33,6 +33,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .infos p {
