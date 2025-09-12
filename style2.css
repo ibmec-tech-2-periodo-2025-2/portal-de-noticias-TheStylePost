@@ -37,6 +37,13 @@ h1{
   left: 600px;
 }  
 
+section {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px;
+  justify-content: center; 
+  margin-top: 20px;
+}
 .img1{
   width: 300px;
   height: 300px;
@@ -45,18 +52,17 @@ h1{
   background-position: center 38%;
   background-repeat: no-repeat;
   position: relative;
-  margin-left: 100px;
+  background-position: center 38%;
   border-radius: 10px;
-  margin-top: 10px;
-  display: inline-block;
-  margin-right: 10px;
 }
 .resumo{
   width: 800px;
   height: 300px;
-  background-color: rgb(195, 195, 216);
+  padding: 20px;
+  background-color: white;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 footer {
   color: rgb(27, 68, 145);
