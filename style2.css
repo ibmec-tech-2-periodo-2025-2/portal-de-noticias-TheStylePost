@@ -21,8 +21,40 @@ header {
   background-size: 25%;
   z-index: 1000;
 }
+h1{
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Bentham';
 
-  
+}
+.centralizado{
+  display: block;
+  text-align: center;
+  background: transparent;
+  position: absolute;
+ 
+  left: 600px;
+}  
+
+.img1{
+  width: 300px;
+  height: 300px;
+  background:black url("./assets/img/R.jfif");
+  background-size: cover;
+  background-position: center 38%;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-left: 100px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+}
+.resumo{
+  width: 500px;
+  height: 300px;
+  background-color: black;
+}
 footer {
   color: rgb(27, 68, 145);
   text-align: center;
