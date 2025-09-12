@@ -1,11 +1,15 @@
 * {
   margin: 0;
   border: 0;
+  background-color: rgb(228, 228, 255);
   box-sizing: border-box;
 }
-body{
-    background-color: rgb(228, 228, 255);
+
+body {
+  margin: 0;
+  padding-top: 120px;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -14,27 +18,11 @@ header {
   width: 100%;
   height: 10%;
   background: rgb(27, 68, 145) url("assets/img/cabecalhoTSP.png") no-repeat center;
-  background-size: 35%;
+  background-size: 25%;
   z-index: 1000;
 }
 
-.primeira {
-  margin-top: 15vh;        
-  width: 300px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  gap: 10px;
-}
-
-.img1 {
-  width: 300px;
-  height: 300px;
-  background: black url("assets/img/4dc5e05c54515dc5862ce48fb634ee2e.jpg") center/cover no-repeat;
-  border-radius: 10px;
-}
-
+  
 footer {
   color: rgb(27, 68, 145);
   text-align: center;
@@ -52,7 +40,7 @@ footer {
 
 
 .icone1{
-  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-Photoroom.png");
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-Photoroom.png");
   width: 72px;               
   height: 72px;
   display: inline-block;
@@ -63,7 +51,7 @@ footer {
 }
 
  .icone2{
-  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-instagram-Photoroom.png");
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-instagram-Photoroom.png");
   width: 72px;               
   height: 72px;
   display: inline-block;
@@ -73,7 +61,7 @@ footer {
   
 }
  .icone3{
-  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-whats-Photoroom.png");
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-whats-Photoroom.png");
   width: 72px;               
   height: 72px;
   display: inline-block;
