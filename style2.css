@@ -3,9 +3,11 @@
   border: 0;
   box-sizing: border-box;
 }
+
 body {
     background-color: rgb(228, 228, 255);
 }
+
 header {
   position: fixed;
   top: 0;
@@ -33,7 +35,6 @@ footer {
   margin: 12px 0;
 }
 
-
 .icone1 {
   background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-Photoroom.png");
   width: 72px;               
@@ -41,8 +42,7 @@ footer {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;   
-  
+  background-size: 60%;     
 }
 
  .icone2 {
@@ -53,8 +53,8 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;   
-  
 }
+
  .icone3 {
   background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-whats-Photoroom.png");
   width: 72px;               
@@ -62,9 +62,9 @@ footer {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;   
-  
+  background-size: 60%;     
 }
+
 .icone1:hover, .icone2:hover, .icone3:hover {
   opacity: .9;
 }
@@ -83,10 +83,18 @@ footer {
   display: inline-block;
   margin-right: 10px;
 }
+
 .resumo {
   width: 800px;
   height: 300px;
   background-color: rgb(195, 195, 216);
   display: inline-block;
   border-radius: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Bentham';
 }
