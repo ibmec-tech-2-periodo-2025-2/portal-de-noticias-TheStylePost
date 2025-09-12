@@ -148,13 +148,22 @@ header {
   background-color: transparent;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
-.link-report:hover .img2,
-.link-report:hover .img3,
-.link-report:hover .img4 {
-  opacity: 0.85;
+
+.link-reportmain {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  
 }
 
-.link-report:hover .manchete1,
+.link-reportmain:hover .img1,
+.link-report:hover .img2,
+.link-report:hover .img3,
+.link-report:hover .img4 { opacity: 0.85; }
+
+
+.link-reportmain:hover .manchete1,
 .link-report:hover .manchetesec {
   text-decoration: underline;
   text-underline-offset: 6px;
