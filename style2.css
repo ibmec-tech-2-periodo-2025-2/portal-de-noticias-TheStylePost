@@ -3,9 +3,11 @@
   border: 0;
   box-sizing: border-box;
 }
-body{
-    background-color: rgb(228, 228, 255);
+
+body {
+  background-color: rgb(228, 228, 255);
 }
+
 header {
   position: fixed;
   top: 0;
@@ -17,28 +19,28 @@ header {
   background-size: 25%;
   z-index: 1000;
 }
-h1{
+
+h1 {
   font-size: 30px;
   margin-top: 20vh;
   text-align: center;
   font-family: 'Bentham';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
 
 }
-.centralizado{
-  display: block;
-  text-align: center;
-  background: transparent;
-  position: absolute;
-  left: 680px;
-  bottom: 517px;
-}  
 
-p{
+
+
+p {
   margin: 0;
   font-size: 16px;
   font-weight: 500;
   color: rgb(27, 68, 145);
-  letter-spacing: 1px;  
+  letter-spacing: 1px;
 }
 
 footer {
@@ -48,7 +50,7 @@ footer {
   margin-top: 40px;
 }
 
-.contatos{
+.contatos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,58 +59,195 @@ footer {
 }
 
 
-.icone1{
+.icone1 {
   background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-Photoroom.png");
-  width: 72px;               
+  width: 72px;
   height: 72px;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;   
-  
+  background-size: 60%;
+
 }
 
- .icone2{
+.icone2 {
   background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-instagram-Photoroom.png");
-  width: 72px;               
+  width: 72px;
   height: 72px;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;   
-  
+  background-size: 60%;
+
 }
- .icone3{
+
+.icone3 {
   background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-whats-Photoroom.png");
-  width: 72px;               
+  width: 72px;
   height: 72px;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;   
-  
+  background-size: 60%;
+
 }
-.icone1:hover, .icone2:hover, .icone3:hover{
+
+.icone1:hover,
+.icone2:hover,
+.icone3:hover {
   opacity: .9;
 
 }
 
-.mainphoto{
+.mainphoto {
   width: 850px;
   height: 500px;
-  background-image: url("assets/img/Sabrina-Carpenter-Doja-Cat-Ariana-Grande-Split-2025.webp") ;
-  background-size: cover;       
-  background-position: center;  
-  background-repeat: no-repeat; 
+  background-image: url("assets/img/Sabrina-Carpenter-Doja-Cat-Ariana-Grande-Split-2025.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: block;
-  margin: auto; 
-  margin-top: 80px ;
+  margin: auto;
+  margin-top: 80px;
 
 }
- .introducao{
-    text-align: center;
-    font-size: 17px;
-    margin-top: 13px;
-    color: black;
- }
 
+.introducao {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 13px;
+  color: black;
+}
+.divautor{
+  position: relative;
+}
+.autor{
+  color: black;
+  position: absolute;
+  left: 340px;
+  top: 60px;
+}
+.paraf1{
+  text-align: center;
+  position: relative;
+  top: 30px;
+  color: black;
+  font-size: 17px;
+}
+.paraf2{
+  text-align: center;
+  position: relative;
+  top: 40px;
+  color: black;
+  font-size: 17px;
+}
+.dojacat{
+  background:url(./assets/img/doja-cat.avif);
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  width:360px ;
+  height:500px ;
+  margin-top: 80px;
+  margin-left: 40px;
+}
+
+.taylormomsen{
+  background:url(./assets/img/taylor-momsen.avif);
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  width:360px ;
+  height:500px ;
+}
+.frankiegrande{
+  background:url(./assets/img/gettyimages-2234193029.avif);
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  width:360px ;
+  height:500px ;
+}
+.arianagrande{
+  background:url(./assets/img/ariana-grande.avif);
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  width:360px ;
+  height:500px ;
+}
+.creditofotos{
+  position: absolute;
+  left: 40px;
+  color: black;
+  font-size: 16px;
+}
+.paraf3{
+  text-align: center;
+  position: relative;
+  top: 40px;
+  color: black;
+  font-size: 17px;
+}
+.paraf4{
+  text-align: center;
+  position: relative;
+  top: 40px;
+  color: black;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px;
+  max-width: 1200px;
+  margin: 50px auto 20px;
+  padding: 10px;
+}
+
+
+.galeria div {
+  height: 300px;                        
+  border-radius: 12px;         
+  background-size: cover;                
+  width: auto;   
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;     
+  background-position: top center;
+  
+}
+.galeria div:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+
+
+
+.foto0  { background-image: url('./assets/img/sabrina-carpenter.avif'); }
+.foto1  { background-image: url('./assets/img/ashlee-simpson.avif'); }
+.foto2  { background-image: url('./assets/img/ashley-nicole-moss.avif'); }
+.foto3  { background-image: url('./assets/img/camila-coelho.avif'); }
+.foto4  { background-image: url('./assets/img/ciara.avif'); }
+.foto5  { background-image: url('./assets/img/brittany-snow.avif'); }
+.foto6  { background-image: url('./assets/img/fka-twigs.avif');}
+.foto7  { background-image: url('./assets/img/haley-kalil.avif'); }
+.foto8  { background-image: url('./assets/img/ice-spice.avif'); }
+.foto9  { background-image: url('./assets/img/jewels-sparkles.avif'); }
+.foto10 { background-image: url('./assets/img/megan-stalter.avif'); }
+.foto11 { background-image: url('./assets/img/lenny-kravitz.avif'); }
+.foto12 { background-image: url('./assets/img/olandria-carthen.avif'); }
+.foto13 { background-image: url('./assets/img/paris-hilton-e-nicky-hilton.avif'); }
+.foto14 { background-image: url('./assets/img/tate-mcrae.avif'); }
+.foto15 { background-image: url('./assets/img/zara-larsson.avif'); }
+.foto16 { background-image: url('./assets/img/ricky-martin.avif'); }
+.foto17 { background-image: url('./assets/img/tiffany-baira.avif'); }
+.foto18 { background-image: url('./assets/img/symone.avif'); }
+.foto19 { background-image: url('./assets/img/brianna-mazzola-nori-royale-e-wennely-quezada.avif'); }
+.foto20 { background-image: url('./assets/img/tyla.avif'); }
+.foto21 { background-image: url('./assets/img/summer-walker.avif'); }
+.foto22 { background-image: url('./assets/img/yungblud.avif'); }
+.foto23 { background-image: url('./assets/img/ts-madison.avif'); }
