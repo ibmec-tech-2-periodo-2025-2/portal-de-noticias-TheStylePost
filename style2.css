@@ -94,6 +94,7 @@ footer {
   justify-content: center;
   margin: 0 auto;
   background-image: url("./assets/img/noticia1-img1.jpg");
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -116,4 +117,67 @@ h1 {
   font-family: 'Bentham';
   margin: 50px 150px 50px 150px;
   line-height: 1.6;
+}
+
+.texto2 {
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Bentham';
+  margin: 20px 200px 20px 200px;
+  line-height: 1.5;
+}
+
+.img2 {
+  width: 800px;
+  height: 500px;
+  background-color: rgb(255, 255, 253);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 70px auto 0 auto;
+  background-image: url("./assets/img/noticia1-img2.jpg");
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img3 {
+  width: 320px;
+  height: 500px;
+  background-color: rgb(255, 255, 253);
+  display: inline-flex;
+  border-radius: 20px;
+  margin: 50px 15px 0 15px;
+  background-image: url("./assets/img/noticia1-img3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.img4 {
+  width: 320px;
+  height: 500px;
+  background-color: rgb(255, 255, 253);
+  display: inline-flex;
+  border-radius: 20px;
+  margin: 50px auto 0 auto;
+  background-image: url("./assets/img/noticia1-img4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.img3:hover, .img4:hover {
+  transform: scale(1.05); /* zoom */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* sombra mais forte */
+  filter: brightness(85%); /* escurece levemente */
+}
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
 }
