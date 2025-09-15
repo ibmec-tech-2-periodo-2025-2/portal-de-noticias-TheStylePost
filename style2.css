@@ -114,3 +114,160 @@ footer {
 .icone1:hover, .icone2:hover, .icone3:hover{
   opacity: .9;
 }
+
+.mainphoto {
+  width: 850px;
+  height: 500px;
+  background-image: url("./assets/img/Captura\ de\ tela_15-9-2025_105948_www.victoriassecret.com.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 10px;
+
+}
+
+.introducao {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 13px;
+  color: black;
+}
+.divautor{
+  position: relative;
+}
+.autor{
+  color: black;
+  position: absolute;
+  left: 340px;
+  top: 60px;
+}
+.paraf1{
+  text-align: center;
+  position: relative;
+  top: 30px;
+  color: black;
+  font-size: 17px;
+}
+.paraf2{
+  text-align: center;
+  position: relative;
+  top: 40px;
+  color: black;
+  font-size: 17px;
+}
+.adriana{
+  background:url(./assets/img/adriana-lima-victorias-secret-fashion-show-2024-red-look.webp);
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  width:360px ;
+  height:500px ;
+  margin-top: 80px;
+  margin-left: 80px;
+  border-radius: 10px;
+}
+
+.alessandra{
+  background:url("./assets/img/alessandra-ambrosio.avif");
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  width:360px ;
+  height:500px ;
+  border-radius: 10px;
+}
+.isabela{
+  background:url("./assets/img/620565-isabelli-fontana-sempre-arrasa-no-palco-1200x0-2.jpg");
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  width:360px ;
+  height:500px ;
+  border-radius: 10px;
+}
+.arianagrande{
+  background:url(./assets/img/ariana-grande.avif);
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  width:360px ;
+  height:500px ;
+}
+.creditofotos{
+  position: absolute;
+  left: 40px;
+  color: black;
+  font-size: 16px;
+}
+.paraf3{
+  text-align: center;
+  position: relative;
+  top: 40px;
+  color: black;
+  font-size: 17px;
+}
+.paraf4{
+  text-align: center;
+  position: relative;
+  top: 40px;
+  color: black;
+  font-size: 17px;
+  margin-top: 30px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px;
+  max-width: 1200px;
+  margin: 50px auto 20px;
+  padding: 10px;
+}
+
+
+.galeria div {
+  height: 300px;                        
+  border-radius: 12px;         
+  background-size: cover;                
+  width: auto;   
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;     
+  background-position: top center;
+  
+}
+.galeria div:hover {
+  transform: scale(1.05);
+  filter: brightness(0.8);
+}
+
+
+
+
+.foto0  { background-image: url('./assets/img/sabrina-carpenter.avif'); }
+.foto1  { background-image: url('./assets/img/ashlee-simpson.avif'); }
+.foto2  { background-image: url('./assets/img/ashley-nicole-moss.avif'); }
+.foto3  { background-image: url('./assets/img/camila-coelho.avif'); }
+.foto4  { background-image: url('./assets/img/ciara.avif'); }
+.foto5  { background-image: url('./assets/img/brittany-snow.avif'); }
+.foto6  { background-image: url('./assets/img/fka-twigs.avif');}
+.foto7  { background-image: url('./assets/img/haley-kalil.avif'); }
+.foto8  { background-image: url('./assets/img/ice-spice.avif'); }
+.foto9  { background-image: url('./assets/img/jewels-sparkles.avif'); }
+.foto10 { background-image: url('./assets/img/megan-stalter.avif'); }
+.foto11 { background-image: url('./assets/img/lenny-kravitz.avif'); }
+.foto12 { background-image: url('./assets/img/olandria-carthen.avif'); }
+.foto13 { background-image: url('./assets/img/paris-hilton-e-nicky-hilton.avif'); }
+.foto14 { background-image: url('./assets/img/tate-mcrae.avif'); }
+.foto15 { background-image: url('./assets/img/zara-larsson.avif'); }
+.foto16 { background-image: url('./assets/img/ricky-martin.avif'); }
+.foto17 { background-image: url('./assets/img/tiffany-baira.avif'); }
+.foto18 { background-image: url('./assets/img/symone.avif'); }
+.foto19 { background-image: url('./assets/img/brianna-mazzola-nori-royale-e-wennely-quezada.avif'); }
+.foto20 { background-image: url('./assets/img/tyla.avif'); }
+.foto21 { background-image: url('./assets/img/summer-walker.avif'); }
+.foto22 { background-image: url('./assets/img/yungblud.avif'); }
+.foto23 { background-image: url('./assets/img/ts-madison.avif'); }
