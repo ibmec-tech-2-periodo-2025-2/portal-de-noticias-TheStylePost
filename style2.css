@@ -109,6 +109,7 @@ footer {
   display: block;
   margin: auto;
   margin-top: 80px;
+  border-radius: 10px;
 
 }
 
@@ -150,6 +151,7 @@ footer {
   height:500px ;
   margin-top: 80px;
   margin-left: 40px;
+  border-radius: 10px;
 }
 
 .taylormomsen{
@@ -159,6 +161,7 @@ footer {
   background-size: cover;
   width:360px ;
   height:500px ;
+  border-radius: 10px;
 }
 .frankiegrande{
   background:url(./assets/img/gettyimages-2234193029.avif);
@@ -167,6 +170,7 @@ footer {
   background-size: cover;
   width:360px ;
   height:500px ;
+  border-radius: 10px;
 }
 .arianagrande{
   background:url(./assets/img/ariana-grande.avif);
@@ -175,6 +179,7 @@ footer {
   background-size: cover;
   width:360px ;
   height:500px ;
+  border-radius: 10px;
 }
 .creditofotos{
   position: absolute;
