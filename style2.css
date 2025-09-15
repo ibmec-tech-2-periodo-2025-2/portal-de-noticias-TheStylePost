@@ -30,7 +30,7 @@ h1{
 
 }
 .centralizado{
-  display: block;
+  display: inline-block;
   text-align: center;
   background: transparent;
   position: relative;
