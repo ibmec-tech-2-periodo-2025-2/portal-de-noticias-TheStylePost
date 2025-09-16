@@ -1,13 +1,13 @@
 * {
   margin: 0;
   border: 0;
-  background-color: rgb(228, 228, 255);
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding-top: 120px;
+  background-color: #F1FAFF
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 
 .infos {
   width: 100%;
-  background:  rgb(255, 255, 255);            
+            
   border-top: 1px solid  rgb(255, 255, 255);   
   border-bottom: 1px solid  rgb(255, 255, 255);
   padding: 12px 0;
@@ -33,6 +33,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 27px;
+  font-family: 'Bentham';
+  letter-spacing: 1px;
+  
+}
+
+.infos :hover{
+  text-decoration: underline;
+  color:rgb(27, 68, 145) ;
+
 }
 
 .infos p {
@@ -140,21 +150,126 @@ header {
 .manchetesec {
   position: absolute;   
   bottom: 15px;         
-  left: 15px;  
+  left: 55px;  
   color: #ffffff;
   font-size: 20px;
   font-family: 'Bentham';
   background-color: transparent;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
-.link-report:hover .img2,
-.link-report:hover .img3,
-.link-report:hover .img4 {
-  opacity: 0.85;
+
+.link-reportmain {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  
 }
 
-.link-report:hover .manchete1,
+.link-reportmain:hover .img1,
+.link-report:hover .img2,
+.link-report:hover .img3,
+.link-report:hover .img4 { opacity: 0.85; }
+
+
+.link-reportmain:hover .manchete1,
 .link-report:hover .manchetesec {
   text-decoration: underline;
   text-underline-offset: 6px;
+}
+
+.centralizado{
+  display: block;
+  text-align: center;
+  background: transparent;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+}  
+  
+footer {
+  color: rgb(27, 68, 145);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.contatos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 12px 0;
+}
+
+
+.icone1{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;   
+  
+}
+.imgfooter{
+  width: 15px;
+  height: 15px;
+}
+
+ .icone2{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-instagram-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;  
+  position:relative; 
+  
+}
+/* Submenu escondido */
+.submenu {
+  position: absolute;
+  bottom: 80px;         /* aparece acima do ícone */
+  left: 50%;
+  min-width: 180px;     /* largura fixa p/ centralizar sem transform */
+  margin-left: -90px;   /* metade da largura -> centraliza */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 10px;
+  display: none;   /* inicialmente escondido */
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Links dentro do submenu */
+.submenu a {
+  color: rgb(27, 68, 145);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+/* Mostrar menu ao passar o mouse no ícone */
+.icone2:hover .submenu {
+  display: flex;
+}
+ .icone3{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-whats-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;   
+  
+}
+.icone1:hover, .icone2:hover, .icone3:hover{
+  opacity: .9;
 }
