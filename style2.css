@@ -1,14 +1,14 @@
 * { margin: 0; border: 0; box-sizing: border-box; }
 
-/* Coluna central no padrão "site de notícia" */
+
 body { background-color: rgb(228, 228, 255); }
 .container {
-  max-width: 960px;     /* largura confortável para leitura */
-  margin: 0 auto;       /* centraliza a coluna */
-  padding: 0 20px;      /* respiro lateral */
+  max-width: 960px;    
+  margin: 0 auto;       
+  padding: 0 20px;      
 }
 
-/* Cabeçalho fixo e compensação superior no conteúdo */
+
 header{
   position: fixed; top: 0; left: 0; right: 0;
   height: 80px;
@@ -16,13 +16,13 @@ header{
   background-size: 25%;
   z-index: 1000;
 }
-.container { margin-top: 120px; } /* evita sobrepor o header */
+.container { margin-top: 120px; } 
 
 h1{
-  font-size: 30px;
+  font-size: 40px;
   font-family: 'Bentham', serif;
   line-height: 1.2;
-  text-align: left;              /* títulos geralmente à esquerda em portais */
+  text-align: center;              
   margin-bottom: 12px;
 }
 
@@ -31,7 +31,7 @@ p{
   color: rgb(27, 68, 145); letter-spacing: 0.2px;
 }
 
-/* Subtítulo inicial (linha fina) */
+
 .introducao{
   color: #111; 
   font-size: 17px;
@@ -40,7 +40,7 @@ p{
   text-align: left;
 }
 
-/* Autor abaixo do subtítulo, sem posição absoluta */
+
 .autor{
   color: #333;
   font-size: 14px;
@@ -48,7 +48,7 @@ p{
   text-align: left;
 }
 
-/* Imagem principal fluida, centralizada dentro da coluna */
+
 .mainphoto{
   width: 100%;
   max-width: 100%;
@@ -59,7 +59,7 @@ p{
   margin: 16px 0 20px;
 }
 
-/* Parágrafos do corpo da matéria */
+
 .paraf{
   color: #111;
   font-size: 17px;
@@ -68,7 +68,7 @@ p{
   text-align: left;
 }
 
-/* Blocos centrais (Ask Ralph) — centralizados na coluna */
+
 .askralph-container {
   display: flex;
   justify-content: center;
@@ -77,27 +77,27 @@ p{
   flex-wrap: wrap; 
 }
 
-/* Aumenta largura, mantém altura fixa (seu pedido anterior) */
+
 .askralph-app, .askralph-look {
   background-position: center;
   background-size: cover;
   width: 100%;
-  max-width: 600px;   /* controla largura máxima dentro da coluna */
-  height: 400px;      /* mantém a altura fixa */
+  max-width: 600px;   
+  height: 400px;      
   border-radius: 10px;
 }
 
 .ralph-bloco1{ background-image: url("./assets/img/rl-app-1.jpg"); }   
 .ralph-bloco2{ background-image: url("./assets/img/rl-look-1.jpg"); }  
 
-/* Crédito das fotos acompanha a coluna, sem absolute */
+
 .creditofotos{
   color: #444; font-size: 14px;
   margin: 8px 0 20px;
   text-align: left;
 }
 
-/* Galeria centralizada dentro da coluna, responsiva */
+
 .galeria{
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -106,12 +106,12 @@ p{
 }
 .galeria div{
   border-radius: 12px; background-size: cover; background-position: top center;
-  aspect-ratio: 3/4; /* mantém proporção de retrato */
+  aspect-ratio: 3/4; 
   transition: transform .25s ease, filter .25s ease;
 }
 .galeria div:hover{ transform: scale(1.03); filter: brightness(0.9); }
 
-/* Backgrounds da galeria */
+
 .rl-g0{ background-image: url('./assets/img/rl-g0.jpg'); }
 .rl-g1{ background-image: url('./assets/img/rl-g1.jpg'); }
 .rl-g2{ background-image: url('./assets/img/rl-g2.jpg'); }
@@ -121,7 +121,7 @@ p{
 .rl-g6{ background-image: url('./assets/img/rl-g6.jpg'); }
 .rl-g7{ background-image: url('./assets/img/rl-g7.jpg'); }
 
-/* Rodapé ocupa largura total da página, mas o texto fica centralizado */
+
 footer{
   color: rgb(27, 68, 145); text-align: center;
   padding: 40px 20px; margin-top: 40px;
