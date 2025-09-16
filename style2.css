@@ -2,7 +2,7 @@
 
 body { background-color: rgb(228, 228, 255); }
 
-/* Header fixo igual ao seu site */
+
 header{
   position: fixed; top: 0; left: 0; right: 0;
   width: 100%; height: 10%;
@@ -11,7 +11,7 @@ header{
   z-index: 1000;
 }
 
-/* Título */
+
 h1{
   font-size: 30px;
   margin-top: 20vh;
@@ -21,13 +21,13 @@ h1{
   justify-content: space-between; align-items: center;
 }
 
-/* Texto base */
+
 p{
   margin: 0; font-size: 16px; font-weight: 500;
   color: rgb(27, 68, 145); letter-spacing: 1px;
 }
 
-/* Introdução e autor */
+
 .introducao{
   text-align: center; font-size: 17px;
   margin-top: 13px; color: black;
@@ -35,15 +35,15 @@ p{
 .divautor{ position: relative; }
 .autor{ color: black; position: absolute; left: 340px; top: 60px; }
 
-/* Foto principal — coloque o arquivo abaixo */
+
 .mainphoto{
   width: 850px; height: 500px;
-  background-image: url("assets/img/ralph-main.jpg"); /* <<< coloque esta imagem */
+  background-image: url("assets/img/ralph-main.jpg"); 
   background-size: cover; background-position: center; background-repeat: no-repeat;
   display: block; margin: 80px auto 0;
 }
 
-/* Parágrafos do corpo */
+
 .paraf1, .paraf2, .paraf3, .paraf4{
   text-align: center; position: relative; color: black; font-size: 17px;
 }
@@ -52,22 +52,22 @@ p{
 .paraf3{ top: 40px; }
 .paraf4{ top: 40px; margin-top: 30px; }
 
-/* 4 blocos destacados (mantive medidas do seu exemplo) */
+
 .dojacat, .taylormomsen, .frankiegrande, .arianagrande{
   display: inline-block; background-position: center; background-size: cover;
   width: 360px; height: 500px; margin-top: 80px; margin-left: 40px;
 }
 
-/* >>> Coloque estes 4 arquivos na pasta assets/img/ com os nomes abaixo */
-.ralph-bloco1{ background-image: url("./assets/img/rl-app-1.jpg"); }   /* app / mobile */
-.ralph-bloco2{ background-image: url("./assets/img/rl-look-1.jpg"); }  /* look masculino */
-.ralph-bloco3{ background-image: url("./assets/img/rl-look-2.jpg"); }  /* look feminino */
-.ralph-bloco4{ background-image: url("./assets/img/rl-store-1.jpg"); } /* loja/fachada */
 
-/* Créditos */
+.ralph-bloco1{ background-image: url("./assets/img/rl-app-1.jpg"); }   
+.ralph-bloco2{ background-image: url("./assets/img/rl-look-1.jpg"); }  
+.ralph-bloco3{ background-image: url("./assets/img/rl-look-2.jpg"); }  
+.ralph-bloco4{ background-image: url("./assets/img/rl-store-1.jpg"); } 
+
+
 .creditofotos{ position: absolute; left: 40px; color: black; font-size: 16px; }
 
-/* Galeria (8 imagens) */
+
 .galeria{
   display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 10px; max-width: 1200px; margin: 50px auto 20px; padding: 10px;
@@ -78,7 +78,7 @@ p{
 }
 .galeria div:hover{ transform: scale(1.05); filter: brightness(0.85); }
 
-/* >>> Coloque estes 8 arquivos na pasta assets/img/ com os nomes abaixo */
+
 .rl-g0{ background-image: url('./assets/img/rl-g0.jpg'); }
 .rl-g1{ background-image: url('./assets/img/rl-g1.jpg'); }
 .rl-g2{ background-image: url('./assets/img/rl-g2.jpg'); }
@@ -88,7 +88,7 @@ p{
 .rl-g6{ background-image: url('./assets/img/rl-g6.jpg'); }
 .rl-g7{ background-image: url('./assets/img/rl-g7.jpg'); }
 
-/* Footer igual ao seu site */
+
 footer{
   color: rgb(27, 68, 145); text-align: center;
   padding: 40px 20px; margin-top: 40px;
