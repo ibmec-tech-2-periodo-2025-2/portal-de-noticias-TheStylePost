@@ -1,14 +1,15 @@
 # portal-de-noticias-TheStylePost
-Componentes: Beatriz, Bruna, Julia, Pedro
+Cada integrante do grupo produziu uma reportagem (em sua própria branch) e todos colaboraram na construção da página principal do site (branch `main`).
 
-Main:Pagina principal do site
-Feature/noticia1:"morte giorgio armani"
-Feature/noticia2: "VM-2025"
-Feature/noticia3: "vitoria's secrest"
-Feature/noticia4: "ralph lauren e IA"
+## Estrutura do projeto
+Main: página inicial do site → (desenvolvida em conjunto pelo grupo).
+Feature/noticia1: Falecimento de Giorgio Armani → (Júlia Leal);
+Feature/noticia2: Looks do VMA 2025 → (Beatriz Samaha);
+Feature/noticia3: Modelos do próximo desfile da Victoria's Secret → (Bruna Bento);
+Feature/noticia4: Ralph Lauren e IA → (Pedro Paulucci);
 
-
-<div class="infos">
-        <p>Tendências &nbsp; &nbsp; Moda &nbsp; &nbsp; Beleza &nbsp; &nbsp; Desfiles &nbsp; &nbsp; Lançamentos &nbsp;
-            &nbsp; História da Moda</p>
-    </div>
+## Integrantes
+Beatriz Samaha - [GitHub](https://github.com/BeatrizSamaha)
+Bruna Bento - [GitHub](https://github.com/brunabcruz)
+Júlia Leal - [GitHub](https://github.com/bjulialeal)
+Pedro Paulucci - [GitHub](https://github.com/pedropaulucci27)
