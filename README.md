@@ -1,8 +1,8 @@
-# portal-de-noticias-TheStylePost
+# The Style Post
 Cada integrante do grupo produziu uma reportagem (em sua própria branch) e todos colaboraram na construção da página principal do site (branch `main`).  
 
 ## Estrutura do projeto
-Main: página inicial do site → (desenvolvida em conjunto pelo grupo)  
+Main: página inicial do site → (desenvolvida em conjunto pelo grupo);  
 Feature/noticia1: Falecimento de Giorgio Armani → (Júlia Leal);  
 Feature/noticia2: Looks do VMA 2025 → (Beatriz Samaha);  
 Feature/noticia3: Modelos do próximo desfile da Victoria's Secret → (Bruna Bento);  
