@@ -1,85 +1,117 @@
 * { margin: 0; border: 0; box-sizing: border-box; }
 
+/* Coluna central no padrão "site de notícia" */
 body { background-color: rgb(228, 228, 255); }
+.container {
+  max-width: 960px;     /* largura confortável para leitura */
+  margin: 0 auto;       /* centraliza a coluna */
+  padding: 0 20px;      /* respiro lateral */
+}
 
-
+/* Cabeçalho fixo e compensação superior no conteúdo */
 header{
   position: fixed; top: 0; left: 0; right: 0;
-  width: 100%; height: 10%;
+  height: 80px;
   background: rgb(27,68,145) url("assets/img/cabecalhoTSP.png") no-repeat center;
   background-size: 25%;
   z-index: 1000;
 }
-
+.container { margin-top: 120px; } /* evita sobrepor o header */
 
 h1{
   font-size: 30px;
-  margin-top: 20vh;
-  text-align: center;
   font-family: 'Bentham', serif;
-  display: flex; flex-direction: column;
-  justify-content: space-between; align-items: center;
+  line-height: 1.2;
+  text-align: left;              /* títulos geralmente à esquerda em portais */
+  margin-bottom: 12px;
 }
-
 
 p{
-  margin: 0; font-size: 16px; font-weight: 500;
-  color: rgb(27, 68, 145); letter-spacing: 1px;
+  font-size: 16px; font-weight: 500;
+  color: rgb(27, 68, 145); letter-spacing: 0.2px;
 }
 
-
+/* Subtítulo inicial (linha fina) */
 .introducao{
-  text-align: center; font-size: 17px;
-  margin-top: 13px; color: black;
+  color: #111; 
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 8px 0 16px;
+  text-align: left;
 }
-.divautor{ position: relative; }
-.autor{ color: black; position: absolute; left: 340px; top: 60px; }
 
+/* Autor abaixo do subtítulo, sem posição absoluta */
+.autor{
+  color: #333;
+  font-size: 14px;
+  margin: 4px 0 20px;
+  text-align: left;
+}
 
+/* Imagem principal fluida, centralizada dentro da coluna */
 .mainphoto{
-  width: 850px; height: 500px;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16/9;
   background-image: url("assets/img/ralph-main.jpg"); 
   background-size: cover; background-position: center; background-repeat: no-repeat;
-  display: block; margin: 80px auto 0;
+  border-radius: 10px;
+  margin: 16px 0 20px;
+}
+
+/* Parágrafos do corpo da matéria */
+.paraf{
+  color: #111;
+  font-size: 17px;
+  line-height: 1.75;
+  margin: 16px 0;
+  text-align: left;
+}
+
+/* Blocos centrais (Ask Ralph) — centralizados na coluna */
+.askralph-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 24px 0 8px;
+  flex-wrap: wrap; 
+}
+
+/* Aumenta largura, mantém altura fixa (seu pedido anterior) */
+.askralph-app, .askralph-look {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  max-width: 600px;   /* controla largura máxima dentro da coluna */
+  height: 400px;      /* mantém a altura fixa */
   border-radius: 10px;
 }
 
-
-.paraf1, .paraf2, .paraf3, .paraf4{
-  text-align: center; position: relative; color: black; font-size: 17px;
-}
-.paraf1{ top: 30px; }
-.paraf2{ top: 40px; }
-.paraf3{ top: 40px; }
-.paraf4{ top: 40px; margin-top: 30px; }
-
-
-.dojacat, .taylormomsen, .frankiegrande, .arianagrande{
-  display: inline-block; background-position: center; background-size: cover;
-  width: 360px; height: 500px; margin-top: 80px; margin-left: 40px;
-}
-
-
 .ralph-bloco1{ background-image: url("./assets/img/rl-app-1.jpg"); }   
 .ralph-bloco2{ background-image: url("./assets/img/rl-look-1.jpg"); }  
-.ralph-bloco3{ background-image: url("./assets/img/rl-look-2.jpg"); }  
-.ralph-bloco4{ background-image: url("./assets/img/rl-store-1.jpg"); } 
 
+/* Crédito das fotos acompanha a coluna, sem absolute */
+.creditofotos{
+  color: #444; font-size: 14px;
+  margin: 8px 0 20px;
+  text-align: left;
+}
 
-.creditofotos{ position: absolute; left: 40px; color: black; font-size: 16px; }
-
-
+/* Galeria centralizada dentro da coluna, responsiva */
 .galeria{
-  display: grid; grid-template-columns: repeat(4, 1fr);
-  gap: 10px; max-width: 1200px; margin: 50px auto 20px; padding: 10px;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px; 
+  margin: 20px 0 30px;
 }
 .galeria div{
   border-radius: 12px; background-size: cover; background-position: top center;
-  height: 400px; transition: transform .25s ease, filter .25s ease;
+  aspect-ratio: 3/4; /* mantém proporção de retrato */
+  transition: transform .25s ease, filter .25s ease;
 }
-.galeria div:hover{ transform: scale(1.05); filter: brightness(0.85); }
+.galeria div:hover{ transform: scale(1.03); filter: brightness(0.9); }
 
-
+/* Backgrounds da galeria */
 .rl-g0{ background-image: url('./assets/img/rl-g0.jpg'); }
 .rl-g1{ background-image: url('./assets/img/rl-g1.jpg'); }
 .rl-g2{ background-image: url('./assets/img/rl-g2.jpg'); }
@@ -89,7 +121,7 @@ p{
 .rl-g6{ background-image: url('./assets/img/rl-g6.jpg'); }
 .rl-g7{ background-image: url('./assets/img/rl-g7.jpg'); }
 
-
+/* Rodapé ocupa largura total da página, mas o texto fica centralizado */
 footer{
   color: rgb(27, 68, 145); text-align: center;
   padding: 40px 20px; margin-top: 40px;
