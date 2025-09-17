@@ -6,8 +6,8 @@
 
 body {
   margin: 0;
-  padding-top: 120px;
-  background-color: #F1FAFF
+  padding-top: 108px;
+  background-color: rgb(228, 228, 255);
 }
 
 header {
@@ -24,24 +24,27 @@ header {
 
 .infos {
   width: 100%;
-            
-  border-top: 1px solid  rgb(255, 255, 255);   
-  border-bottom: 1px solid  rgb(255, 255, 255);
-  padding: 12px 0;
+  font;
+  color: white;
+ background-color: rgb(27, 68, 145);
+  padding:  0;
   text-align: center;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 27px;
+  gap: 40px;
   font-family: 'Bentham';
   letter-spacing: 1px;
   
 }
 
 .infos :hover{
-  text-decoration: underline;
-  color:rgb(27, 68, 145) ;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  cursor: pointer;
+  opacity: 60%;
+  transition: 0.5s;
 
 }
 
@@ -256,7 +259,6 @@ footer {
   text-decoration: underline;
 }
 
-/* Mostrar menu ao passar o mouse no ícone */
 .icone2:hover .submenu {
   display: flex;
 }
