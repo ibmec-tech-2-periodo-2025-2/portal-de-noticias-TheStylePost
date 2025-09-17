@@ -1,13 +1,13 @@
 * {
   margin: 0;
   border: 0;
-  background-color: rgb(228, 228, 255);
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding-top: 120px;
+  background-color: rgb(228, 228, 255)
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 
 .infos {
   width: 100%;
-  background:  rgb(255, 255, 255);            
+            
   border-top: 1px solid  rgb(255, 255, 255);   
   border-bottom: 1px solid  rgb(255, 255, 255);
   padding: 12px 0;
@@ -33,6 +33,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 27px;
+  font-family: 'Bentham';
+  letter-spacing: 1px;
+  
+}
+
+.infos :hover{
+  color:rgb(27, 68, 145) ;
+
 }
 
 .infos p {
@@ -61,7 +70,7 @@ header {
   margin: 0 auto;
   display: flex;
   gap: 10px;
-  margin-bottom: 300px;
+  margin-bottom: 30px;
 }
 
 .sec {
@@ -140,22 +149,126 @@ header {
 .manchetesec {
   position: absolute;   
   bottom: 15px;         
-  left: 15px;  
+  left: 55px;  
   color: #ffffff;
   font-size: 20px;
   font-family: 'Bentham';
   background-color: transparent;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
-.link-report:hover .img2,
-.link-report:hover .img3,
-.link-report:hover .img4 {
-  opacity: 0.85;
+
+.link-reportmain {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  
 }
 
-.link-report:hover .manchete1,
+.link-reportmain:hover .img1,
+.link-report:hover .img2,
+.link-report:hover .img3,
+.link-report:hover .img4 { opacity: 0.85; }
+
+
+.link-reportmain:hover .manchete1,
 .link-report:hover .manchetesec {
   text-decoration: underline;
   text-underline-offset: 6px;
 }
- 
+
+.centralizado{
+  display: block;
+  text-align: center;
+  background: transparent;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+}  
+  
+footer {
+  color: rgb(27, 68, 145);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.contatos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 12px 0;
+}
+
+
+.icone1{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;   
+  
+}
+.imgfooter{
+  width: 15px;
+  height: 15px;
+}
+
+ .icone2{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-instagram-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;  
+  position:relative; 
+  
+}
+
+.submenu {
+  position: absolute;
+  bottom: 80px;      
+  left: 50%;
+  min-width: 180px;    
+  margin-left: -90px;   
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 10px;
+  display: none;   
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+.submenu a {
+  color: rgb(27, 68, 145);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+
+.icone2:hover .submenu {
+  display: flex;
+}
+ .icone3{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-whats-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;   
+  
+}
+.icone1:hover, .icone2:hover, .icone3:hover{
+  opacity: .9;
+}
