@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  border: 0;
+  background-color: rgb(228, 228, 255);
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: 120px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10%;
+  background: rgb(27, 68, 145) url("assets/img/cabecalhoTSP.png") no-repeat center;
+  background-size: 25%;
+  z-index: 1000;
+}
+h1{
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Bentham';
+
+}
+.centralizado{
+  display: block;
+  text-align: center;
+  background: transparent;
+  position: absolute;
+ 
+  left: 600px;
+}  
+
+section {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px;
+  justify-content: center; 
+  margin-top: 20px;
+}
+.img1{
+  width: 300px;
+  height: 300px;
+  background:rgb(195, 195, 216) url("./assets/img/R.jfif");
+  background-size: cover;
+  background-position: center 38%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center 38%;
+  border-radius: 10px;
+}
+.resumo{
+  width: 800px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 20px;
+  font-family:'Bentham';
+  margin: 50px 150px 50px 150px
+}
+footer {
+  color: rgb(27, 68, 145);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.contatos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 12px 0;
+}
+
+
+.icone1{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%; 
+  
+}
+
+ .icone2{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-instagram-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;   
+  
+}
+ .icone3{
+  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-whats-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;   
+  
+}
+.icone1:hover, .icone2:hover, .icone3:hover{
+  opacity: .9;
+}
+
+.mainphoto {
+  width: 850px;
+  height: 500px;
+  background-image: url("./assets/img/Captura\ de\ tela_15-9-2025_105948_www.victoriassecret.com.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 10px;
+
+}
+
+.introducao {
+  text-align: center;
+  font-size: 17px;
+  margin-top: 30px;
+  color: black;
+  font-family: 'Bentham';
+  
+}
+.divautor{
+  position: relative;
+}
+.autor{
+  color: black;
+  position: absolute;
+  left: 340px;
+  top: 60px;
+  font-family: 'Bentham';
+}
+.paraf1{
+  text-align: center;
+  position: relative;
+  top: 30px;
+  color: black;
+  font-size: 17px;
+  margin: 20px 200px 20px 200px;
+  font-family: 'Bentham';
+}
+.paraf2{
+  text-align: center;
+  position: relative;
+  top: 40px;
+  color: black;
+  font-size: 17px;
+  margin: 20px 200px 20px 200px;
+  font-family: 'Bentham';
+}
+
+.brasileiras{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10px;
+  
+
+}
+.adriana{
+  background:url("./assets/img/adriana-lima-victorias-secret-fashion-show-2024-red-look.webp");
+  background-position: center;
+  background-size: cover;
+  width:360px ;
+  height:500px ;
+  border-radius: 10px;
+  
+}
+
+.alessandra{
+  background:url("./assets/img/alessandra-ambrosio.avif");
+  background-position: center;
+  background-size: cover;
+  width:360px ;
+  height:500px ; 
+  border-radius: 10px;
+ 
+}
+.isabela{
+  background:url("./assets/img/620565-isabelli-fontana-sempre-arrasa-no-palco-1200x0-2.jpg");
+  background-position: center;
+  background-size: cover;
+  width:360px ;
+  height:500px ;
+  border-radius: 10px;
+  
+ 
+}
+.creditofotos{
+  position: absolute;
+  left: 40px;
+  color: black;
+  font-size: 16px;
+  margin-left: 60px;
+}
+.paraf3{
+  text-align: center;
+  position: relative;
+  top: 40px;
+  color: black;
+  font-size: 17px;
+  margin: 50px 200px 50px 200px;
+  font-family: 'Bentham';
+}
