@@ -146,22 +146,27 @@ footer {
   font-size: 17px;
    font-family: 'Bentham';
 }
+.fotos2{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2px;
+  margin: 50px auto 20px;
+  padding: 10px;
+}
 .dojacat{
   background:url(./assets/img/doja-cat.avif);
   background-position: center;
-  display: inline-block;
   background-size: cover;
   width:360px ;
   height:500px ;
-  margin-top: 80px;
-  margin-left: 40px;
+  /* margin-top: 80px;
+  margin-left: 40px; */
   border-radius: 10px;
 }
 
 .taylormomsen{
   background:url(./assets/img/taylor-momsen.avif);
   background-position: center;
-  display: inline-block;
   background-size: cover;
   width:360px ;
   height:500px ;
@@ -170,7 +175,6 @@ footer {
 .frankiegrande{
   background:url(./assets/img/gettyimages-2234193029.avif);
   background-position: center;
-  display: inline-block;
   background-size: cover;
   width:360px ;
   height:500px ;
@@ -179,7 +183,6 @@ footer {
 .arianagrande{
   background:url(./assets/img/ariana-grande.avif);
   background-position: center;
-  display: inline-block;
   background-size: cover;
   width:360px ;
   height:500px ;
@@ -187,7 +190,8 @@ footer {
 }
 .creditofotos{
   position: absolute;
-  left: 40px;
+  left: 20px;
+  top: 1570px;
   color: black;
   font-size: 16px;
   font-family: 'Bentham';
