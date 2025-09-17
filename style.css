@@ -6,8 +6,8 @@
 
 body {
   margin: 0;
-  padding-top: 108px;
-  background-color: rgb(228, 228, 255);
+  padding-top: 120px;
+  background-color: rgb(228, 228, 225)
 }
 
 header {
@@ -24,27 +24,23 @@ header {
 
 .infos {
   width: 100%;
-  font;
-  color: white;
- background-color: rgb(27, 68, 145);
-  padding:  0;
+            
+  border-top: 1px solid  rgb(255, 255, 255);   
+  border-bottom: 1px solid  rgb(255, 255, 255);
+  padding: 12px 0;
   text-align: center;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 27px;
   font-family: 'Bentham';
   letter-spacing: 1px;
   
 }
 
 .infos :hover{
-  text-decoration-line: underline;
-  text-decoration-thickness: 3px;
-  cursor: pointer;
-  opacity: 60%;
-  transition: 0.5s;
+  color:rgb(27, 68, 145) ;
 
 }
 
@@ -232,23 +228,23 @@ footer {
   position:relative; 
   
 }
-/* Submenu escondido */
+
 .submenu {
   position: absolute;
-  bottom: 80px;         /* aparece acima do ícone */
+  bottom: 80px;      
   left: 50%;
-  min-width: 180px;     /* largura fixa p/ centralizar sem transform */
-  margin-left: -90px;   /* metade da largura -> centraliza */
+  min-width: 180px;    
+  margin-left: -90px;   
   background: white;
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 6px 10px;
-  display: none;   /* inicialmente escondido */
+  display: none;   
   flex-direction: column;
   gap: 4px;
 }
 
-/* Links dentro do submenu */
+
 .submenu a {
   color: rgb(27, 68, 145);
   text-decoration: none;
@@ -259,7 +255,7 @@ footer {
   text-decoration: underline;
 }
 
-/* Mostrar menu ao passar o mouse no ícone */
+
 .icone2:hover .submenu {
   display: flex;
 }
