@@ -1,0 +1,177 @@
+/* Conteúdo padrão da página */
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(228, 228, 255);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10%;
+  background: rgb(27, 68, 145) url("assets/img/cabecalhoTSP.png") no-repeat center;
+  background-size: 25%;
+  z-index: 1000;
+  margin-bottom: 40px;
+}
+
+.centralizado{
+  display: inline-block;
+  text-align: center;
+  background: transparent;
+  position: relative;
+}  
+
+footer {
+  color: rgb(27, 68, 145);
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.contatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 12px 0;
+}
+
+.icone1 {
+  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;     
+}
+
+ .icone2 {
+  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-instagram-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;   
+}
+
+ .icone3 {
+  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-whats-Photoroom.png");
+  width: 72px;               
+  height: 72px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;     
+}
+
+.icone1:hover, .icone2:hover, .icone3:hover {
+  opacity: .9;
+}
+
+/* Conteúdo da reportagem */
+h1 {
+  font-size: 30px;
+  margin-top: 150px;
+  text-align: center;
+  font-family: 'Bentham';
+}
+
+.introducao {
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Bentham';
+  margin: 30px;
+}
+
+.texto1 {
+  font-size: 25px;
+  text-align: justify;
+  font-family: 'Bentham';
+  margin: 50px 150px 50px 150px;
+  line-height: 1.6;
+}
+
+.texto2 {
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Bentham';
+  margin: 20px 200px 20px 200px;
+  line-height: 1.5;
+}
+
+.img1 {
+  width: 800px;
+  height: 500px;
+  background-color: rgb(255, 255, 253);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  background-image: url("./assets/img/noticia1-img1.jpg");
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img2 {
+  width: 800px;
+  height: 500px;
+  background-color: rgb(255, 255, 253);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  margin: 70px auto 0 auto;
+  background-image: url("./assets/img/noticia1-img2.jpg");
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.img3 {
+  width: 320px;
+  height: 500px;
+  background-color: rgb(255, 255, 253);
+  display: inline-flex;
+  border-radius: 20px;
+  margin: 50px 15px 0 15px;
+  background-image: url("./assets/img/noticia1-img3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.img4 {
+  width: 320px;
+  height: 500px;
+  background-color: rgb(255, 255, 253);
+  display: inline-flex;
+  border-radius: 20px;
+  margin: 50px auto 0 auto;
+  background-image: url("./assets/img/noticia1-img4.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.img3:hover, .img4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+  filter: brightness(85%);
+}
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+}
