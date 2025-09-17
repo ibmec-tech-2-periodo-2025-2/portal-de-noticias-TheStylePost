@@ -62,7 +62,7 @@ section {
   background-color: white;
   display: inline-block;
   border-radius: 20px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family:'Bentham';
   margin: 50px 150px 50px 150px
 }
 footer {
@@ -166,43 +166,43 @@ footer {
   margin: 20px 200px 20px 200px;
   font-family: 'Bentham';
 }
+
+.brasileiras{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10px;
+  
+
+}
 .adriana{
-  background:url(./assets/img/adriana-lima-victorias-secret-fashion-show-2024-red-look.webp);
+  background:url("./assets/img/adriana-lima-victorias-secret-fashion-show-2024-red-look.webp");
   background-position: center;
-  display: inline-block;
   background-size: cover;
   width:360px ;
   height:500px ;
-  margin-top: 80px;
-  margin-left: 80px;
   border-radius: 10px;
+  
 }
 
 .alessandra{
   background:url("./assets/img/alessandra-ambrosio.avif");
   background-position: center;
-  display: inline-block;
   background-size: cover;
   width:360px ;
-  height:500px ;
+  height:500px ; 
   border-radius: 10px;
+ 
 }
 .isabela{
   background:url("./assets/img/620565-isabelli-fontana-sempre-arrasa-no-palco-1200x0-2.jpg");
   background-position: center;
-  display: inline-block;
   background-size: cover;
   width:360px ;
   height:500px ;
   border-radius: 10px;
-}
-.arianagrande{
-  background:url(./assets/img/ariana-grande.avif);
-  background-position: center;
-  display: inline-block;
-  background-size: cover;
-  width:360px ;
-  height:500px ;
+  
+ 
 }
 .creditofotos{
   position: absolute;
