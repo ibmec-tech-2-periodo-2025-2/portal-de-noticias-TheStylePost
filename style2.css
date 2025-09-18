@@ -54,7 +54,7 @@ footer {
 }
 
 .icone1 {
-  background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-Photoroom.png");
+  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-Photoroom.png");
   width: 72px; height: 72px;
   display: inline-block;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@ footer {
 }
 
 .icone2 {
-  background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-instagram-Photoroom.png");
+  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-instagram-Photoroom.png");
   width: 72px; height: 72px;
   display: inline-block;
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@ footer {
 }
 
 .icone3 {
-  background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-whats-Photoroom.png");
+  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-whats-Photoroom.png");
   width: 72px; height: 72px;
   display: inline-block;
   background-repeat: no-repeat;
@@ -165,7 +165,7 @@ footer {
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr); 
   gap: 10px;
   max-width: 1200px;
   margin: 30px auto 20px;
@@ -208,14 +208,17 @@ footer {
 .foto22 { background-image: url('./assets/img/yungblud.avif'); }
 .foto23 { background-image: url('./assets/img/ts-madison.avif'); }
 
+
 @media (max-width: 1200px) {
   .mainphoto { height: 420px; }
+  .galeria { grid-template-columns: repeat(3, 1fr); } /* 3 colunas */
   .galeria div { height: 340px; }
   .fotos2 .dojacat, .fotos2 .taylormomsen, .fotos2 .frankiegrande, .fotos2 .arianagrande { height: 380px; }
 }
 
 @media (max-width: 900px) {
   .mainphoto { height: 340px; }
+  .galeria { grid-template-columns: repeat(2, 1fr); } /* 2 colunas */
   .galeria div { height: 300px; }
   .fotos2 .dojacat, .fotos2 .taylormomsen, .fotos2 .frankiegrande, .fotos2 .arianagrande { height: 340px; }
 }
@@ -225,6 +228,7 @@ footer {
   header { height: 110px; background-size: 420px auto; }
   h1 { font-size: 26px; }
   .mainphoto { height: 240px; }
+  .galeria { grid-template-columns: 1fr; } /* 1 coluna */
   .galeria div { height: 240px; }
   .fotos2 .dojacat, .fotos2 .taylormomsen, .fotos2 .frankiegrande, .fotos2 .arianagrande { height: 280px; }
 }
