@@ -6,34 +6,29 @@
 
 body {
   background-color: rgb(228, 228, 255);
+  padding-top: 120px;
 }
 
 header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   width: 100%;
-  height: 10%;
+  height: 120px;
   background: rgb(27, 68, 145) url("assets/img/cabecalhoTSP.png") no-repeat center;
-  background-size: 25%;
+  background-size: 550px auto;
   z-index: 1000;
 }
 
 h1 {
   font-size: 30px;
-  margin-top: 20vh;
+  margin-top: 24px;
   text-align: center;
   font-family: 'Bentham';
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
-
 }
-
-
 
 p {
   margin: 0;
@@ -58,59 +53,46 @@ footer {
   margin: 12px 0;
 }
 
-
 .icone1 {
-  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-Photoroom.png");
-  width: 72px;
-  height: 72px;
+  background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-Photoroom.png");
+  width: 72px; height: 72px;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
-
 }
 
 .icone2 {
-  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-instagram-Photoroom.png");
-  width: 72px;
-  height: 72px;
+  background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-instagram-Photoroom.png");
+  width: 72px; height: 72px;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
-
 }
 
 .icone3 {
-  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-whats-Photoroom.png");
-  width: 72px;
-  height: 72px;
+  background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-whats-Photoroom.png");
+  width: 72px; height: 72px;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
-
 }
 
-.icone1:hover,
-.icone2:hover,
-.icone3:hover {
-  opacity: .9;
-
-}
+.icone1:hover, .icone2:hover, .icone3:hover { opacity: .9; }
 
 .mainphoto {
-  width: 850px;
+  width: 90%;
+  max-width: 1000px;
   height: 500px;
   background-image: url("assets/img/Sabrina-Carpenter-Doja-Cat-Ariana-Grande-Split-2025.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: block;
-  margin: auto;
-  margin-top: 80px;
+  margin: 24px auto 0;
   border-radius: 10px;
-
 }
 
 .introducao {
@@ -118,127 +100,88 @@ footer {
   font-size: 17px;
   margin-top: 13px;
   color: black;
-   font-family: 'Bentham';
-}
-.divautor{
-  position: relative;
-}
-.autor{
-  color: black;
-  position: absolute;
-  left: 340px;
-  top: 60px;
-   font-family: 'Bentham';
-}
-.paraf1{
-  text-align: center;
-  position: relative;
-  top: 30px;
-  color: black;
-  font-size: 17px;
-   font-family: 'Bentham';
-}
-.paraf2{
-  text-align: center;
-  position: relative;
-  top: 40px;
-  color: black;
-  font-size: 17px;
-   font-family: 'Bentham';
-}
-.fotos2{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 2px;
-  margin: 50px auto 20px;
-  padding: 10px;
-}
-.dojacat{
-  background:url(./assets/img/doja-cat.avif);
-  background-position: center;
-  background-size: cover;
-  width:360px ;
-  height:500px ;
-  /* margin-top: 80px;
-  margin-left: 40px; */
-  border-radius: 10px;
+  font-family: 'Bentham';
 }
 
-.taylormomsen{
-  background:url(./assets/img/taylor-momsen.avif);
+.divautor { position: relative; }
+.autor {
+  color: black;
+  position: relative;
+  font-family: 'Bentham';
+  max-width: 1000px;
+  margin: 8px auto 0;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.paraf1, .paraf2, .paraf3, .paraf4 {
+  text-align: center;
+  position: relative;
+  color: black;
+  font-size: 17px;
+  font-family: 'Bentham';
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.paraf1 { top: 0; }
+.paraf2 { top: 0; }
+.paraf3 { top: 0; }
+.paraf4 { top: 0; }
+
+.fotos2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  max-width: 1000px;
+  margin: 30px auto 10px;
+  padding: 0 10px;
+}
+
+.dojacat, .taylormomsen, .frankiegrande, .arianagrande {
+  width: 100%;
+  height: 420px;
+  border-radius: 10px;
   background-position: center;
   background-size: cover;
-  width:360px ;
-  height:500px ;
-  border-radius: 10px;
 }
-.frankiegrande{
-  background:url(./assets/img/gettyimages-2234193029.avif);
-  background-position: center;
-  background-size: cover;
-  width:360px ;
-  height:500px ;
-  border-radius: 10px;
-}
-.arianagrande{
-  background:url(./assets/img/ariana-grande.avif);
-  background-position: center;
-  background-size: cover;
-  width:360px ;
-  height:500px ;
-  border-radius: 10px;
-}
-.creditofotos{
-  position: absolute;
-  left: 20px;
-  top: 1570px;
+
+.dojacat { background-image: url(./assets/img/doja-cat.avif); }
+.taylormomsen { background-image: url(./assets/img/taylor-momsen.avif); }
+.frankiegrande { background-image: url(./assets/img/gettyimages-2234193029.avif); }
+.arianagrande { background-image: url(./assets/img/ariana-grande.avif); }
+
+.creditofotos {
+  position: static;
   color: black;
   font-size: 16px;
   font-family: 'Bentham';
-}
-.paraf3{
-  text-align: center;
-  position: relative;
-  top: 40px;
-  color: black;
-  font-size: 17px;
-   font-family: 'Bentham';
-}
-.paraf4{
-  text-align: center;
-  position: relative;
-  top: 40px;
-  color: black;
-  font-size: 17px;
-  margin-top: 30px;
-   font-family: 'Bentham';
+  max-width: 1000px;
+  margin: 6px auto 0;
+  padding: 0 20px;
+  text-align: left;
 }
 
 .galeria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 10px;
   max-width: 1200px;
-  margin: 50px auto 20px;
+  margin: 30px auto 20px;
   padding: 10px;
 }
 
-
 .galeria div {
-  height: 300px;                        
-  border-radius: 12px;         
-  background-size: cover;                
-  width: auto;   
-  height: 400px;
+  border-radius: 12px;
+  height: 380px;
   background-repeat: no-repeat;
-  background-size: cover;     
+  background-size: cover;
   background-position: top center;
-  
+  transition: transform .25s ease, filter .25s ease;
 }
-.galeria div:hover {
-  transform: scale(1.05);
-  filter: brightness(0.8);
-}
+
+.galeria div:hover { transform: scale(1.03); filter: brightness(0.9); }
 
 .foto0  { background-image: url('./assets/img/sabrina-carpenter.avif'); }
 .foto1  { background-image: url('./assets/img/ashlee-simpson.avif'); }
@@ -264,3 +207,24 @@ footer {
 .foto21 { background-image: url('./assets/img/summer-walker.avif'); }
 .foto22 { background-image: url('./assets/img/yungblud.avif'); }
 .foto23 { background-image: url('./assets/img/ts-madison.avif'); }
+
+@media (max-width: 1200px) {
+  .mainphoto { height: 420px; }
+  .galeria div { height: 340px; }
+  .fotos2 .dojacat, .fotos2 .taylormomsen, .fotos2 .frankiegrande, .fotos2 .arianagrande { height: 380px; }
+}
+
+@media (max-width: 900px) {
+  .mainphoto { height: 340px; }
+  .galeria div { height: 300px; }
+  .fotos2 .dojacat, .fotos2 .taylormomsen, .fotos2 .frankiegrande, .fotos2 .arianagrande { height: 340px; }
+}
+
+@media (max-width: 600px) {
+  body { padding-top: 110px; }
+  header { height: 110px; background-size: 420px auto; }
+  h1 { font-size: 26px; }
+  .mainphoto { height: 240px; }
+  .galeria div { height: 240px; }
+  .fotos2 .dojacat, .fotos2 .taylormomsen, .fotos2 .frankiegrande, .fotos2 .arianagrande { height: 280px; }
+}

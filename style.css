@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  padding-top: 120px;                 /* compensa o header fixo */
+  padding-top: 120px;                 
   background-color: rgb(228, 228, 255);
 }
 
@@ -16,7 +16,7 @@ header {
   width: 100%;
   height: 120px; 
   background: rgb(27, 68, 145) url("assets/img/cabecalhoTSP.png") no-repeat center;
-  background-size: 550px auto;        /* logo em PX */
+  background-size: 550px auto;        
   z-index: 1000;
 }
 
@@ -87,12 +87,12 @@ header {
   margin: 0 auto 30px;
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;          /* permite quebrar em linhas */
+  flex-wrap: wrap;         
 }
 
 .sec {
   flex: 1;
-  min-width: 260px;         /* evita esmagar */
+  min-width: 260px;         
   height: 400px;
   background-color: #ffffff;
   display: flex;
@@ -222,16 +222,14 @@ footer {
 }
 .icone1:hover, .icone2:hover, .icone3:hover{ opacity: .9; }
 
-/* ===================== BREAKPOINTS ===================== */
 
-/* até 1200px: dá uma folga geral */
 @media (max-width: 1200px) {
   .infos { gap: 20px; }
   .principal { width: 85%; }
   .secundaria { width: 85%; }
 }
 
-/* até 900px: reduz header e cards em 2 colunas */
+
 @media (max-width: 900px) {
   header { height: 100px; background-size: 420px auto; }
   body { padding-top: 100px; }
@@ -243,7 +241,7 @@ footer {
   .manchetesec { font-size: 18px; left: 20px; bottom: 12px; }
 }
 
-/* até 600px: uma coluna, tudo mais compacto */
+
 @media (max-width: 600px) {
   header { height: 90px; background-size: 320px auto; }
   body { padding-top: 90px; }

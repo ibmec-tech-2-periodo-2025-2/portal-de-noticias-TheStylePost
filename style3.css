@@ -1,222 +1,106 @@
-* {
-  margin: 0;
-  border: 0;
-  background-color: rgb(228, 228, 255);
-  box-sizing: border-box;
+*{margin:0;border:0;box-sizing:border-box;background-color:rgb(228,228,255)}
+body{margin:0;padding-top:120px}
+
+header{
+  position:fixed;top:0;left:0;right:0;width:100%;
+  height:120px;
+  background:rgb(27,68,145) url("assets/img/cabecalhoTSP.png") no-repeat center;
+  background-size:550px auto;
+  z-index:1000
 }
 
-body {
-  margin: 0;
-  padding-top: 120px;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 10%;
-  background: rgb(27, 68, 145) url("assets/img/cabecalhoTSP.png") no-repeat center;
-  background-size: 25%;
-  z-index: 1000;
-}
 h1{
-  font-size: 30px;
-  margin-top: 5px;
-  text-align: center;
-  font-family: 'Bentham';
-
+  font-size:30px;
+  margin-top:8px;
+  text-align:center;
+  font-family:'Bentham'
 }
-.centralizado{
-  display: block;
-  text-align: center;
-  background: transparent;
-  position: absolute;
- 
-  left: 600px;
-}  
 
-section {
-  display: flex;
-  align-items: flex-start; 
-  gap: 20px;
-  justify-content: center; 
-  margin-top: 20px;
+.centralizado{display:block;text-align:center;position:absolute;left:50%;transform:translateX(-50%)}
+
+section{
+  display:flex;align-items:flex-start;gap:20px;justify-content:center;margin-top:20px;flex-wrap:wrap;padding:0 16px
 }
+
 .img1{
-  width: 300px;
-  height: 300px;
-  background:rgb(195, 195, 216) url("./assets/img/R.jfif");
-  background-size: cover;
-  background-position: center 38%;
-  background-repeat: no-repeat;
-  position: relative;
-  background-position: center 38%;
-  border-radius: 10px;
+  width:340px;height:320px;border-radius:10px;
+  background:rgb(195,195,216) url("./assets/img/R.jfif") center 38%/cover no-repeat;position:relative
 }
+
 .resumo{
-  width: 800px;
-  height: 300px;
-  padding: 20px;
-  background-color: white;
-  display: inline-block;
-  border-radius: 20px;
-  font-family:'Bentham';
-  margin: 50px 150px 50px 150px
-}
-footer {
-  color: rgb(27, 68, 145);
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 40px;
+  width:800px;max-width:100%;min-width:280px;height:auto;min-height:220px;
+  padding:20px;background:#fff;display:inline-block;border-radius:20px;font-family:'Bentham';margin:0
 }
 
-.contatos{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin: 12px 0;
+footer{color:rgb(27,68,145);text-align:center;padding:40px 20px;margin-top:40px}
+.contatos{display:flex;justify-content:center;align-items:center;gap:16px;margin:12px 0}
+
+.icone1,.icone2,.icone3{width:72px;height:72px;display:inline-block;background-repeat:no-repeat;background-position:center;background-size:60%}
+.icone1{background-image:url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-Photoroom.png")}
+.icone2{background-image:url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-instagram-Photoroom.png")}
+.icone3{background-image:url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-whats-Photoroom.png")}
+.icone1:hover,.icone2:hover,.icone3:hover{opacity:.9}
+
+.mainphoto{
+  width:90%;max-width:1000px;height:500px;border-radius:10px;
+  background-image:url("./assets/img/Captura de tela_15-9-2025_105948_www.victoriassecret.com.jpeg");
+  background-size:cover;background-position:center;background-repeat:no-repeat;
+  display:block;margin:24px auto 0
 }
 
-
-.icone1{
-  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-Photoroom.png");
-  width: 72px;               
-  height: 72px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%; 
-  
+.introducao{
+  text-align:center;font-size:17px;margin-top:24px;color:#000;font-family:'Bentham';padding:0 20px
 }
 
- .icone2{
-  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-instagram-Photoroom.png");
-  width: 72px;               
-  height: 72px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%;   
-  
-}
- .icone3{
-  background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-whats-Photoroom.png");
-  width: 72px;               
-  height: 72px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%;   
-  
-}
-.icone1:hover, .icone2:hover, .icone3:hover{
-  opacity: .9;
-}
-
-.mainphoto {
-  width: 850px;
-  height: 500px;
-  background-image: url("./assets/img/Captura\ de\ tela_15-9-2025_105948_www.victoriassecret.com.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  margin: auto;
-  margin-top: 80px;
-  border-radius: 10px;
-
-}
-
-.introducao {
-  text-align: center;
-  font-size: 17px;
-  margin-top: 30px;
-  color: black;
-  font-family: 'Bentham';
-  
-}
-.divautor{
-  position: relative;
-}
+.divautor{position:relative}
 .autor{
-  color: black;
-  position: absolute;
-  left: 340px;
-  top: 60px;
-  font-family: 'Bentham';
+  color:#000;position:relative;font-family:'Bentham';
+  max-width:1000px;margin:8px auto 0;text-align:left;padding:0 20px
 }
-.paraf1{
-  text-align: center;
-  position: relative;
-  top: 30px;
-  color: black;
-  font-size: 17px;
-  margin: 20px 200px 20px 200px;
-  font-family: 'Bentham';
-}
-.paraf2{
-  text-align: center;
-  position: relative;
-  top: 40px;
-  color: black;
-  font-size: 17px;
-  margin: 20px 200px 20px 200px;
-  font-family: 'Bentham';
+
+.paraf1,.paraf2,.paraf3{
+  text-align:center;position:relative;color:#000;font-size:17px;font-family:'Bentham';
+  max-width:1000px;margin:20px auto;padding:0 20px;top:0
 }
 
 .brasileiras{
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  gap: 10px;
-  
-
-}
-.adriana{
-  background:url("./assets/img/adriana-lima-victorias-secret-fashion-show-2024-red-look.webp");
-  background-position: center;
-  background-size: cover;
-  width:360px ;
-  height:500px ;
-  border-radius: 10px;
-  
+  display:flex;justify-content:center;margin-top:30px;gap:12px;flex-wrap:wrap;padding:0 10px
 }
 
-.alessandra{
-  background:url("./assets/img/alessandra-ambrosio.avif");
-  background-position: center;
-  background-size: cover;
-  width:360px ;
-  height:500px ; 
-  border-radius: 10px;
- 
+.adriana,.alessandra,.isabela{
+  background-position:center;background-size:cover;width:100%;max-width:360px;height:500px;border-radius:10px
 }
-.isabela{
-  background:url("./assets/img/620565-isabelli-fontana-sempre-arrasa-no-palco-1200x0-2.jpg");
-  background-position: center;
-  background-size: cover;
-  width:360px ;
-  height:500px ;
-  border-radius: 10px;
-  
- 
-}
+.adriana{background-image:url("./assets/img/adriana-lima-victorias-secret-fashion-show-2024-red-look.webp")}
+.alessandra{background-image:url("./assets/img/alessandra-ambrosio.avif")}
+.isabela{background-image:url("./assets/img/620565-isabelli-fontana-sempre-arrasa-no-palco-1200x0-2.jpg")}
+
 .creditofotos{
-  position: absolute;
-  left: 40px;
-  color: black;
-  font-size: 16px;
-  margin-left: 80px;
+  position:static;color:#000;font-size:16px;margin:10px auto 0;max-width:1000px;padding:0 20px;text-align:left
 }
-.paraf3{
-  text-align: center;
-  position: relative;
-  top: 40px;
-  color: black;
-  font-size: 17px;
-  margin: 50px 200px 50px 200px;
-  font-family: 'Bentham';
+
+@media (max-width:1200px){
+  .mainphoto{height:420px}
+  .img1{width:320px;height:300px}
+  .adriana,.alessandra,.isabela{height:460px}
 }
+
+@media (max-width:900px){
+  .mainphoto{height:340px}
+  .img1{width:300px;height:280px}
+  .adriana,.alessandra,.isabela{height:420px}
+}
+
+@media (max-width:600px){
+  body{padding-top:110px}
+  header{height:110px;background-size:420px auto}
+  h1{font-size:26px}
+  .mainphoto{height:240px}
+  .img1{width:92vw;height:56vw;max-height:280px}
+  .resumo{width:100%}
+  .adriana,.alessandra,.isabela{max-width:none;width:100%;height:360px}
+}
+
+
+
+
+
