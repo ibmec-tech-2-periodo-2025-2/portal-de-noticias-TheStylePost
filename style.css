@@ -6,29 +6,25 @@
 
 body {
   margin: 0;
-  padding-top: 120px;
-  background-color: rgb(228, 228, 255)
+  padding-top: 120px;                 /* compensa o header fixo */
+  background-color: rgb(228, 228, 255);
 }
 
 header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   width: 100%;
-  height: 15%;
+  height: 120px; 
   background: rgb(27, 68, 145) url("assets/img/cabecalhoTSP.png") no-repeat center;
-  background-size: 35%;
+  background-size: 550px auto;        /* logo em PX */
   z-index: 1000;
 }
 
 .infos {
   width: 100%;
-            
-  border-top: 1px solid  rgb(255, 255, 255);   
-  border-bottom: 1px solid  rgb(255, 255, 255);
+  border-top: 1px solid #fff;   
+  border-bottom: 1px solid #fff;
   padding: 12px 0;
-  text-align: center;
   margin: 0;
   display: flex;
   align-items: center;
@@ -36,21 +32,16 @@ header {
   gap: 27px;
   font-family: 'Bentham';
   letter-spacing: 1px;
-  
+  flex-wrap: wrap;
 }
 
-.infos :hover{
-  color:rgb(27, 68, 145) ;
-
-}
-
-.infos p {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 500;
+.infos span { 
   color: rgb(27, 68, 145);
-  letter-spacing: 1px;       
-  
+  font-size: 16px;
+}
+.infos span:hover {
+  text-decoration: underline; 
+  text-underline-offset: 4px;
 }
 
 .principal {
@@ -65,35 +56,17 @@ header {
   border-radius: 20px;
 }
 
-.secundaria {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-
-.sec {
-  flex: 1;
-  height:400px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.link-reportmain {
+  display: block;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
-  margin-top: 10px;
-  margin: 8px;
-  text-decoration: none; 
-  color: inherit;
 }
 
 .img1 {
   width: 100%;
   height: 100%;
-  background: black url("./assets/img/garmanibw.webp");
-  background-size: cover;
-  background-position: center 38%;
-  background-repeat: no-repeat;
+  background: black url("./assets/img/garmanibw.webp") center 38%/cover no-repeat;
   position: relative;
   border-radius: 10px;
   transition: opacity 0.3s ease;
@@ -106,38 +79,35 @@ header {
   color: #ffffff;
   font-size: 40px;
   font-family: 'Bentham';
-  background-color: transparent;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
-.img2 {
-  width: 100%;
-  height: 100%;
-  background: black url("./assets/img/lady-gaga-vma-2025.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 10px;
-  position: relative;
-  transition: opacity 0.3s ease;
+.secundaria {
+  width: 80%;
+  margin: 0 auto 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;          /* permite quebrar em linhas */
 }
 
-.img3 {
-  width: 100%;
-  height: 100%;
-  background: black url("./assets/img/19fa9cabc24d1889de41bd3710614461--victoria-secret-angels-victoria-secret-fashion-show.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.sec {
+  flex: 1;
+  min-width: 260px;         /* evita esmagar */
+  height: 400px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
+  margin: 8px;
+  text-decoration: none; 
+  color: inherit;
   position: relative;
-  transition: opacity 0.3s ease;
 }
 
-.img4 {
+.img2, .img3, .img4 {
   width: 100%;
   height: 100%;
-  background: black url("./assets/img/ralphlauren.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -145,6 +115,9 @@ header {
   position: relative;
   transition: opacity 0.3s ease;
 }
+.img2 { background-image: url("./assets/img/lady-gaga-vma-2025.jpg"); }
+.img3 { background-image: url("./assets/img/19fa9cabc24d1889de41bd3710614461--victoria-secret-angels-victoria-secret-fashion-show.jpg"); }
+.img4 { background-image: url("./assets/img/ralphlauren.png"); }
 
 .manchetesec {
   position: absolute;   
@@ -153,23 +126,13 @@ header {
   color: #ffffff;
   font-size: 20px;
   font-family: 'Bentham';
-  background-color: transparent;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-
-.link-reportmain {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  
 }
 
 .link-reportmain:hover .img1,
 .link-report:hover .img2,
 .link-report:hover .img3,
 .link-report:hover .img4 { opacity: 0.85; }
-
 
 .link-reportmain:hover .manchete1,
 .link-report:hover .manchetesec {
@@ -184,8 +147,8 @@ header {
   position: absolute;
   top: 0px;
   left: 70px;
-}  
-  
+}
+
 footer {
   color: rgb(27, 68, 145);
   text-align: center;
@@ -201,7 +164,6 @@ footer {
   margin: 12px 0;
 }
 
-
 .icone1{
   background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-Photoroom.png");
   width: 72px;               
@@ -210,14 +172,10 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;   
-  
 }
-.imgfooter{
-  width: 15px;
-  height: 15px;
-}
+.imgfooter{ width: 15px; height: 15px; }
 
- .icone2{
+.icone2{
   background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-instagram-Photoroom.png");
   width: 72px;               
   height: 72px;
@@ -226,7 +184,6 @@ footer {
   background-position: center;
   background-size: 60%;  
   position:relative; 
-  
 }
 
 .submenu {
@@ -244,22 +201,17 @@ footer {
   gap: 4px;
 }
 
-
 .submenu a {
   color: rgb(27, 68, 145);
   text-decoration: none;
   font-size: 14px;
 }
 
-.submenu a:hover {
-  text-decoration: underline;
-}
+.submenu a:hover { text-decoration: underline; }
 
+.icone2:hover .submenu { display: flex; }
 
-.icone2:hover .submenu {
-  display: flex;
-}
- .icone3{
+.icone3{
   background-image: url("assets/img/ChatGPT%20Image%2011_09_2025,%2022_30_36-whats-Photoroom.png");
   width: 72px;               
   height: 72px;
@@ -267,8 +219,42 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;   
-  
 }
-.icone1:hover, .icone2:hover, .icone3:hover{
-  opacity: .9;
+.icone1:hover, .icone2:hover, .icone3:hover{ opacity: .9; }
+
+/* ===================== BREAKPOINTS ===================== */
+
+/* até 1200px: dá uma folga geral */
+@media (max-width: 1200px) {
+  .infos { gap: 20px; }
+  .principal { width: 85%; }
+  .secundaria { width: 85%; }
+}
+
+/* até 900px: reduz header e cards em 2 colunas */
+@media (max-width: 900px) {
+  header { height: 100px; background-size: 420px auto; }
+  body { padding-top: 100px; }
+
+  .principal { height: 320px; }
+  .manchete1 { font-size: 32px; left: 18px; bottom: 16px; }
+
+  .sec { flex: 1 1 calc(50% - 24px); height: 320px; }
+  .manchetesec { font-size: 18px; left: 20px; bottom: 12px; }
+}
+
+/* até 600px: uma coluna, tudo mais compacto */
+@media (max-width: 600px) {
+  header { height: 90px; background-size: 320px auto; }
+  body { padding-top: 90px; }
+
+  .infos { gap: 12px; }
+  .infos span { font-size: 14px; }
+
+  .principal { width: 92%; height: 240px; }
+  .manchete1 { font-size: 22px; left: 16px; bottom: 12px; }
+
+  .secundaria { width: 92%; }
+  .sec { flex: 1 1 100%; height: 240px; }
+  .manchetesec { font-size: 16px; left: 16px; bottom: 10px; }
 }
