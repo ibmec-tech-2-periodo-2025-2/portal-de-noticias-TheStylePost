@@ -6,18 +6,17 @@
 }
 
 body {
-    background-color: rgb(228, 228, 255);
+  background-color: rgb(228, 228, 255);
+  padding-top: 120px; /* compensa o header fixo (igual página principal) */
 }
 
 header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   width: 100%;
-  height: 10%;
+  height: 120px; /* igual página principal */
   background: rgb(27, 68, 145) url("assets/img/cabecalhoTSP.png") no-repeat center;
-  background-size: 25%;
+  background-size: 550px auto; /* logo fixa em px (igual principal) */
   z-index: 1000;
   margin-bottom: 40px;
 }
@@ -44,124 +43,101 @@ footer {
   margin: 12px 0;
 }
 
-.icone1 {
-  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-Photoroom.png");
+.icone1,
+.icone2,
+.icone3 {
   width: 72px;               
   height: 72px;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 60%;     
+  background-size: 60%;
 }
+.icone1 { background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-Photoroom.png"); }
+.icone2 { background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-instagram-Photoroom.png"); }
+.icone3 { background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-whats-Photoroom.png"); }
 
- .icone2 {
-  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-instagram-Photoroom.png");
-  width: 72px;               
-  height: 72px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%;   
-}
-
- .icone3 {
-  background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-whats-Photoroom.png");
-  width: 72px;               
-  height: 72px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 60%;     
-}
-
-.icone1:hover, .icone2:hover, .icone3:hover {
-  opacity: .9;
-}
+.icone1:hover, .icone2:hover, .icone3:hover { opacity: .9; }
 
 /* Conteúdo da reportagem */
 h1 {
   font-size: 30px;
-  margin-top: 150px;
+  margin: 24px auto 12px; /* não precisa mais 150px por causa do header fixo */
   text-align: center;
   font-family: 'Bentham';
+  max-width: 960px;
+  padding: 0 20px;
 }
 
 .introducao {
   font-size: 15px;
   text-align: center;
   font-family: 'Bentham';
-  margin: 30px;
+  margin: 16px auto 24px;
+  max-width: 860px;
+  padding: 0 20px;
 }
 
-.texto1 {
-  font-size: 25px;
-  text-align: justify;
-  font-family: 'Bentham';
-  margin: 50px 150px 50px 150px;
-  line-height: 1.6;
-}
-
+.texto1,
 .texto2 {
-  font-size: 20px;
   text-align: justify;
   font-family: 'Bentham';
-  margin: 20px 200px 20px 200px;
-  line-height: 1.5;
+  line-height: 1.65;
+  max-width: 960px;      /* largura máxima de coluna */
+  padding: 0 20px;       /* respiro lateral */
+  margin: 24px auto;     /* centraliza a coluna */
 }
+.texto1 { font-size: 22px; }
+.texto2 { font-size: 18px; }
 
-.img1 {
-  width: 800px;
-  height: 500px;
-  background-color: rgb(255, 255, 253);
-  display: flex;
-  border-radius: 10px;
-  justify-content: center;
-  margin: 0 auto;
-  background-image: url("./assets/img/noticia1-img1.jpg");
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
+/* Imagem principal e secundária grandes */
+.img1,
 .img2 {
-  width: 800px;
-  height: 500px;
+  width: 100%;
+  max-width: 1000px;     /* limita largura máxima */
+  margin: 20px auto 0;
   background-color: rgb(255, 255, 253);
-  display: flex;
+  display: block;
   border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  height: 500px;         /* altura padrão desktop (ajustada nos breakpoints) */
+}
+.img1 { background-image: url("./assets/img/noticia1-img1.jpg"); }
+.img2 { background-image: url("./assets/img/noticia1-img2.jpg"); margin-top: 40px; }
+
+/* Duas imagens altas lado a lado */
+.instagram {
+  display: flex;
   justify-content: center;
-  margin: 70px auto 0 auto;
-  background-image: url("./assets/img/noticia1-img2.jpg");
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  align-items: flex-start;
+  gap: 30px;
+  margin: 30px auto 0;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  flex-wrap: wrap; /* permite quebrar em telas menores */
 }
 
-.img3 {
-  width: 320px;
-  height: 500px;
-  background-color: rgb(255, 255, 253);
-  display: inline-flex;
-  border-radius: 20px;
-  margin: 50px 15px 0 15px;
-  background-image: url("./assets/img/noticia1-img3.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-}
-
+.img3,
 .img4 {
-  width: 320px;
-  height: 500px;
   background-color: rgb(255, 255, 253);
-  display: inline-flex;
+  display: block;
   border-radius: 20px;
-  margin: 50px auto 0 auto;
-  background-image: url("./assets/img/noticia1-img4.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  width: 46%;     /* duas colunas no desktop */
+  min-width: 280px;
+  max-width: 460px;
+  height: 500px;  /* altura padrão desktop (ajustada nos breakpoints) */
 }
+.img3 { background-image: url("./assets/img/noticia1-img3.jpg"); }
+.img4 { background-image: url("./assets/img/noticia1-img4.jpg"); }
 
 .img3:hover, .img4:hover {
   transform: scale(1.05);
@@ -169,9 +145,41 @@ h1 {
   filter: brightness(85%);
 }
 
-.instagram {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: fit-content;
+/* ======= BREAKPOINTS (responsividade) ======= */
+
+/* até 1200px: folga geral */
+@media (max-width: 1200px) {
+  .img1, .img2 { height: 420px; }
+}
+
+/* até 900px: textos um pouco menores e imagens ajustadas */
+@media (max-width: 900px) {
+  .texto1 { font-size: 20px; }
+  .texto2 { font-size: 17px; }
+
+  .img1, .img2 { height: 360px; }
+
+  .img3, .img4 {
+    width: 48%;
+    height: 440px;
+  }
+}
+
+/* até 600px: coluna única compacta */
+@media (max-width: 600px) {
+  body { padding-top: 110px; }
+  header { height: 110px; background-size: 420px auto; } /* cabeçalho reduz ligeiro */
+
+  h1 { font-size: 26px; }
+  .texto1 { font-size: 18px; }
+  .texto2 { font-size: 16px; }
+
+  .img1, .img2 { height: 240px; }
+
+  .instagram { gap: 16px; }
+  .img3, .img4 {
+    width: 100%;       /* empilha uma embaixo da outra */
+    height: 360px;
+    max-width: none;
+  }
 }
