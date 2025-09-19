@@ -53,9 +53,9 @@ footer {
   background-position: center;
   background-size: 60%;
 }
-.icone1 { background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-Photoroom.png"); }
-.icone2 { background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-instagram-Photoroom.png"); }
-.icone3 { background-image: url("./assets/img/ChatGPT\\ Image\\ 11_09_2025\\,\\ 22_30_36-whats-Photoroom.png"); }
+.icone1 { background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-Photoroom.png"); }
+.icone2 { background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-instagram-Photoroom.png"); }
+.icone3 { background-image: url("./assets/img/ChatGPT\ Image\ 11_09_2025\,\ 22_30_36-whats-Photoroom.png"); }
 
 .icone1:hover, .icone2:hover, .icone3:hover { opacity: .9; }
 
